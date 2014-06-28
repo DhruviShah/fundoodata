@@ -1,0 +1,32 @@
+
+
+<table>
+	<tr>
+		Name: <%= @com.company%>
+	</tr>
+	<tr>
+		HR Name: <%= @com.HR_name%>
+	</tr>
+	<tr>
+		HR Contact: <%= @com.HR_contact%>
+	</tr>
+	<tr>
+		HR Email: <%= @com.HR_email %>
+	<tr>
+	<tr>
+		CA Name: <%= @com.CA_name%>
+	</tr>
+	<tr>
+		CA Contact: <%= @com.CA_contact%>
+	</tr>
+	<tr>
+		CA Email: <%= @com.CA_email %>
+	<tr>
+		Created_at: <%= @com.created_at%>
+	</tr>
+	<tr>
+		Updated_at: <%= @com.updated_at%>
+	</tr>
+</table>
+
+<%= link_to("Back to list",:action => 'list')%>

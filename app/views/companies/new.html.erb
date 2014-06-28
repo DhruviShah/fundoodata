@@ -1,0 +1,22 @@
+
+<%= link_to("Back to List",'list')%>
+<%= form_for(:com, :url=>{:action => 'create'}) do |f| %>
+<table>
+
+	<h2> New Company </h2>
+
+	
+	Name: <%= f.text_field(:company) %> </br>
+
+	HR Name: <%= f.text_field(:HR_name)%></br>
+	HR Contact: <%= f.text_field(:HR_contact)%></br>
+	HR Email: <%= f.text_field(:HR_email) %> </br>
+
+	CA Name: <%= f.text_field(:CA_name)%></br>
+	CA Contact: <%= f.text_field(:CA_contact)%></br>
+	CA Email: <%= f.text_field(:CA_email) %> </br>	
+
+</table>
+
+<%=submit_tag("Add new Company")%>
+	<%end%>

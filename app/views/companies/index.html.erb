@@ -1,0 +1,7 @@
+
+<%= form_for(:com, :url=> {:action => 'search'}) do |f| %>
+
+	Company Name: <%= f.text_field(:company) %> </br>
+	<%= submit_tag("Search Company") %>
+
+<%end%>

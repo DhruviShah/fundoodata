@@ -1,0 +1,38 @@
+
+<table>
+
+	<% @com.each do |com| %>
+	  <tr>
+	  	<td> <%= com.company%> </td>
+	  	<td> <%= link_to("Show",:action=>'show',:id=>com.id)%></td>
+	  	<td> <%= link_to("Edit",:action =>'edit',:id=>com.id)%></td>
+	    <td> <%= link_to("Delete",:action=>'delete',:id=>com.id)%></td>
+	 
+	  </tr>
+	  <tr>
+	  	 <td> <%= com.HR_name %> </td>
+	  	 <td> <%= com.HR_email %> </td>
+	  	 <td><%= com.HR_contact %> </td>
+
+	  </tr>
+
+	   <tr>
+	  	 <td> <%= com.CA_name %> </td>
+	  	 <td> <%= com.CA_email %> </td>
+	  	 <td><%= com.CA_contact %> </td></br>
+	  	 
+	  </tr>
+
+	 <%end%>
+
+</table>
+</br>
+<%=link_to("Add new Company" , 'new')%>
+</br>
+</br>
+
+    Logged in as <%= current_user.email %>.</br>
+    <%= link_to "Log out", log_out_path %></br></br>
+  
+    <%= link_to "Sign up for new Admin", sign_up_path %> 
+  

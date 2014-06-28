@@ -1,0 +1,9 @@
+
+<%= form_for(:subject,:url => {:action => 'destroy',:id=>@com.id}) do |f|%>
+<p> Are you sure you want to delete this item? </p>
+</br>
+<%= @com.company %>
+
+<%=submit_tag("Delete")%>
+
+<%end%>
