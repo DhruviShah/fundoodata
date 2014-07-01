@@ -25,18 +25,6 @@ ActiveRecord::Schema.define(:version => 20140618210345) do
     t.datetime "updated_at",                                :null => false
   end
 
-  create_table "firms", :force => true do |t|
-    t.string   "company",                  :default => " "
-    t.string   "HR_name"
-    t.string   "HR_contact", :limit => 15
-    t.string   "HR_email"
-    t.string   "CA_name"
-    t.string   "CA_contact", :limit => 15
-    t.string   "CA_email"
-    t.datetime "created_at",                                :null => false
-    t.datetime "updated_at",                                :null => false
-  end
-
   create_table "users", :force => true do |t|
     t.string   "email"
     t.string   "password_hash"
